@@ -41,6 +41,17 @@ jobs:
       - name: Show what promotion would do (never applies it)
         run: python3 sweep/promote.py | head -200
 
+      - name: Guard — the sweep must never touch the map or the notes
+        run: |
+          dirty=$(git status --porcelain -- data/tiles.json notes/)
+          if [ -n "$dirty" ]; then
+            echo "::error::canon rule 5 violation: the sweep modified data/tiles.json or notes/"
+            echo "$dirty"
+            git checkout -- data/tiles.json notes/
+            exit 1
+          fi
+          echo "clean: the sweep touched nothing but archive/reports"
+
       - name: Commit the day's proposals, if any changed
         run: |
           git config user.name  "commons-sweep"
@@ -52,11 +63,3 @@ jobs:
           fi
           git commit -m "sweep: proposals for $(date -u +%F) (propose-only, nothing published)"
           git push
-
-      - name: Guard — the sweep must never touch the map or the notes
-        run: |
-          if ! git diff --quiet HEAD~1 HEAD -- data/tiles.json notes/ 2>/dev/null; then
-            echo "::error::canon rule 5 violation: a sweep run modified data/tiles.json or notes/"
-            exit 1
-          fi
-          echo "clean: only archive/reports was touched"
