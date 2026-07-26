@@ -1,0 +1,43 @@
+name: "Door 3 — Institutional observer note"
+description: Add public, citable context to a tile. This platform points to intake channels — it never submits on your behalf.
+title: "[note] "
+labels: ["note", "door:institutional-observer"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This surface files nothing with anyone.** It observes and publishes.
+        Existing intake channels are listed in [three-doors.md](https://github.com/EVEglyphDesign/lenexa-city-center-commons/blob/main/docs/three-doors.md#3-institutional-observer).
+        Go there yourself, under your own name. Nothing you write here is forwarded.
+  - type: input
+    id: tile
+    attributes:
+      label: Tile
+      description: The place this note is about — name or address.
+    validations:
+      required: true
+  - type: textarea
+    id: note
+    attributes:
+      label: Note
+      description: Public, citable context only. Link the public record where you can.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Public source
+      description: URL of the public record, article, or document.
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Comma separated, freeform.
+      placeholder: public-record, inspection, news
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I understand this platform notifies no authority and that I am responsible for filing anything I want filed.
+          required: true

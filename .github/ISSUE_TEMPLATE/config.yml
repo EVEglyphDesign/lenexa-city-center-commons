@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Canon (read before opening anything)
+    url: https://github.com/EVEglyphDesign/lenexa-city-center-commons/blob/main/docs/canon.md
+    about: The eight rules this surface runs on. No auto-notification of any authority.
+  - name: Emergency
+    url: https://www.lenexa.com/
+    about: If someone is in danger, call 911. This map is not an emergency channel and notifies no one.

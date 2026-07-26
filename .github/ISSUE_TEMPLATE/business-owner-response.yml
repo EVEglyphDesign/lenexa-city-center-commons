@@ -1,0 +1,37 @@
+name: "Door 2 — Business owner response"
+description: Respond to notes about your place, add context, correct a fact, or share news. Same weight as any other note.
+title: "[note] "
+labels: ["note", "door:business-owner"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Your note carries the same weight as every other note — no more, no less.
+        This repo stores no owner or management field, by canon, so nothing here records ownership.
+  - type: input
+    id: tile
+    attributes:
+      label: Tile
+      description: Your place — name or address.
+    validations:
+      required: true
+  - type: textarea
+    id: note
+    attributes:
+      label: Your note
+      description: Context, correction, change made, hours, news.
+    validations:
+      required: true
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Comma separated, freeform.
+      placeholder: owner-response, updated-hours, fixed
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I understand this is published publicly and is not verified, ranked, or scored.
+          required: true

@@ -1,0 +1,39 @@
+name: "Door 1 — Neighbor note"
+description: Add a note about anywhere inside the Lenexa City Center geofence. Any tone, any tag.
+title: "[note] "
+labels: ["note", "door:neighbor"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Anything you post here is public, in a public repo, forever.
+        This platform notifies no authority — not the city, not the county, not KDHE, not the police.
+        If you want an authority involved, see the [Institutional Observer door](https://github.com/EVEglyphDesign/lenexa-city-center-commons/blob/main/docs/three-doors.md#3-institutional-observer) and file it yourself.
+  - type: input
+    id: tile
+    attributes:
+      label: Tile
+      description: The place this note is about — name or address. If it is not on the map yet, just describe it.
+      placeholder: lenexa-public-market
+    validations:
+      required: true
+  - type: textarea
+    id: note
+    attributes:
+      label: Your note
+      description: Freeform. Praise, friction, a detail, a correction, a good morning.
+    validations:
+      required: true
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Comma separated, freeform. Categories emerge from tags — nothing is predefined.
+      placeholder: quiet, good-lighting, friendly
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I understand this is published publicly and that nothing here is reported to any authority.
+          required: true

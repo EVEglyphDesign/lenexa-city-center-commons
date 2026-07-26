@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" stroke="#4e6b4c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Lenexa City Center Commons mark">
+  <rect width="40" height="40" rx="9" fill="#f7f2e7" stroke="none"/>
+  <path d="M4 30 L12 22 L20 28 L28 16 L36 24"/>
+  <path d="M6 34h28"/>
+  <circle cx="28" cy="16" r="3.2"/>
+  <path d="M12 22v-8"/>
+</svg>
