@@ -242,6 +242,7 @@ a:hover { color: var(--clay); }
 .door span { display: block; font-size: .78rem; color: var(--ink-soft); }
 
 .relay-note {
+  overflow-wrap: anywhere;
   margin-top: .8rem;
   font-size: .78rem;
   color: var(--ink-faint);
