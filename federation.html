@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fork this — Lenexa City Center Commons</title>
+<meta name="description" content="How to stand up a Commons for another Midwest city: required tile fields, inherited canon 1–19, portable twin format, naming convention.">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="page">
+<header class="topbar">
+  <a class="brand" href="./">
+    <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round" aria-label="Lenexa City Center Commons mark" role="img">
+      <path d="M4 30 L12 22 L20 28 L28 16 L36 24"/>
+      <path d="M6 34h28"/>
+      <circle cx="28" cy="16" r="3.2"/>
+      <path d="M12 22v-8"/>
+    </svg>
+    <span class="brand-text">
+      <strong>Lenexa City Center Commons</strong>
+      <span>notes from the neighborhood &middot; publish-only</span>
+    </span>
+  </a>
+  <nav class="topnav" aria-label="Primary">
+    <a href="./">Map</a>
+    <a href="canon.html">Canon</a>
+    <a href="three-doors.html">Three doors</a>
+    <a href="preparedness.html">Preparedness</a>
+    <a href="federation.html">Fork this</a>
+    <a href="https://github.com/EVEglyphDesign/lenexa-city-center-commons" target="_blank" rel="noopener">Repo</a>
+  </nav>
+</header>
+<main class="doc">
+<h1>Federation</h1>
+<p>This repository is a template. Fork it, point it at your own neighborhood, delete our tiles,
+seed yours. Nothing here is centralized, so there is nothing to ask permission from. Canon
+rule 6 is the whole governance model, and this page is what it looks like in practice.</p>
+<p>There is no registry, no directory, no federation server, and no protocol handshake. Two
+Commonses federate in the only way that matters: they read the same canon and use the same
+file shapes, so a person and their twin can move between them without losing anything.</p>
+<hr />
+<h2 id="1">1. Naming convention</h2>
+<pre><code>&lt;city&gt;-&lt;neighborhood&gt;-commons
+</code></pre>
+<p>Examples: <code>lenexa-city-center-commons</code>, <code>omaha-blackstone-commons</code>,
+<code>des-moines-east-village-commons</code>, <code>wichita-douglas-design-district-commons</code>.</p>
+<p>Lowercase, hyphenated, no state abbreviation unless two cities in your reach collide. The
+repo name is also the twin's portability key — keep it boring.</p>
+<hr />
+<h2 id="2">2. What a fork inherits</h2>
+<p><strong>Canon rules 1–19, in full, without amendment.</strong> They live in <a href="canon.html"><code>docs/canon.md</code></a>.
+A fork may add rules. A fork may not remove or weaken one and still call itself a Commons.
+The rules a fork most often gets asked to break, and must not:</p>
+<ul>
+<li>No accounts, ever (rule 9).</li>
+<li>No auto-notification of any authority, on any threshold (rule 3).</li>
+<li>No landlord, owner, or management field, at any stage of any pipeline (rule 4).</li>
+<li>No server-side capture of queries, locations, or voice (rules 2, 13, 16).</li>
+<li>No claim of having called anyone in the emergency on-ramp (rule 18).</li>
+</ul>
+<p>If your city's situation seems to require breaking one of these, the honest move is to build
+a different thing under a different name. That is not a loss. That is rule 6 working.</p>
+<hr />
+<h2 id="3">3. Required fields in <code>data/tiles.json</code></h2>
+<p>GeoJSON <code>FeatureCollection</code>. One <code>Feature</code> per tile.</p>
+<pre><code class="language-json">{
+  &quot;type&quot;: &quot;Feature&quot;,
+  &quot;geometry&quot;: { &quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [-94.7770, 38.9705] },
+  &quot;properties&quot;: {
+    &quot;id&quot;: &quot;the-domain-apartments&quot;,
+    &quot;name&quot;: &quot;The Domain Apartments&quot;,
+    &quot;kind&quot;: &quot;residential&quot;,
+    &quot;address&quot;: &quot;Renner Blvd at W 87th St Pkwy area, Lenexa, KS 66219&quot;,
+    &quot;tags&quot;: [],
+    &quot;external&quot;: {},
+    &quot;place_id&quot;: null,
+    &quot;blurb&quot;: &quot;Part of the original City Center plan.&quot;,
+    &quot;notes_file&quot;: &quot;notes/the-domain-apartments.md&quot;,
+    &quot;coordinates_precision&quot;: &quot;approximate — corrections welcome by pull request&quot;
+  }
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Required</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>geometry</code></td>
+<td>yes</td>
+<td>Point, <code>[lon, lat]</code>, WGS84. Approximate is fine and should say so.</td>
+</tr>
+<tr>
+<td><code>id</code></td>
+<td>yes</td>
+<td>Slug. Matches the notes filename. Stable forever once published.</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>yes</td>
+<td>What a neighbor calls it out loud.</td>
+</tr>
+<tr>
+<td><code>kind</code></td>
+<td>yes</td>
+<td>One of <code>residential</code>, <code>business</code>, <code>civic</code>. Not a category tree.</td>
+</tr>
+<tr>
+<td><code>address</code></td>
+<td>yes</td>
+<td>Human-readable. Used for the cross-street readout and deep links.</td>
+</tr>
+<tr>
+<td><code>tags</code></td>
+<td>yes</td>
+<td>Array, may be empty. Lens membership. Empty is the hopeful floor.</td>
+</tr>
+<tr>
+<td><code>external</code></td>
+<td>yes</td>
+<td>Object, may be empty. Accepted third-party fields, each attributed.</td>
+</tr>
+<tr>
+<td><code>blurb</code></td>
+<td>no</td>
+<td>One neutral sentence. Never evaluative.</td>
+</tr>
+<tr>
+<td><code>notes_file</code></td>
+<td>no</td>
+<td>Defaults to <code>notes/&lt;id&gt;.md</code>.</td>
+</tr>
+<tr>
+<td><code>place_id</code></td>
+<td>no</td>
+<td>Google Place ID, if a human accepted one from a sweep proposal.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Forbidden fields, at every layer — tiles, notes, sweep proposals, twin files:</strong></p>
+<pre><code>owner  landlord  management  management_company  property_manager
+tenant_name  resident_name  complaint_count  score  rank
+</code></pre>
+<p><code>sweep/sweep.py</code> refuses to emit a row carrying any of these. Keep that guard in your fork.
+It is thirty lines and it is the difference between a neighborhood map and a target list.</p>
+<h3>The <code>external</code> object</h3>
+<p>Keys are namespaced by source, and every rendered value must carry visible attribution and a
+deep link back to its source. Rule 12.</p>
+<pre><code class="language-json">&quot;external&quot;: {
+  &quot;google_place_id&quot;: &quot;ChIJ...&quot;,
+  &quot;google_rating&quot;: 4.5,
+  &quot;google_reviews&quot;: 812,
+  &quot;yelp_url&quot;: &quot;https://www.yelp.com/biz/...&quot;,
+  &quot;yelp_rating&quot;: 4.0,
+  &quot;yelp_categories&quot;: [&quot;Coffee &amp; Tea&quot;],
+  &quot;osm_type&quot;: &quot;cafe&quot;,
+  &quot;hours&quot;: &quot;Mon–Fri 7:00–18:00&quot;,
+  &quot;hours_source&quot;: &quot;OpenStreetMap&quot;
+}
+</code></pre>
+<p>Nothing lands here automatically. The sweep proposes into <code>archive/reports/</code>, a human accepts
+by pull request. Rule 5.</p>
+<hr />
+<h2 id="4">4. Notes format</h2>
+<p>One markdown file per tile at <code>notes/&lt;id&gt;.md</code>. Notes are <code>###</code> blocks:</p>
+<pre><code class="language-markdown">### 2026-07-25 · door: neighbor
+
+The crossing at 87th and Renner is dark after 8pm in winter.
+
+tags: unlit, unsafe-crossing
+</code></pre>
+<p>Permissively licensed, plain text, mirrorable by anyone including the platforms the tile
+twins from. Rule 10.</p>
+<hr />
+<h2 id="5">5. Twin file format — portable across forks</h2>
+<p><code>commons-twin.json</code>, exported from any Commons, imports into any other:</p>
+<pre><code class="language-json">{
+  &quot;format&quot;: &quot;commons-twin/1&quot;,
+  &quot;created&quot;: &quot;2026-07-25&quot;,
+  &quot;lenses&quot;: [&quot;third-place&quot;],
+  &quot;favorites&quot;: [&quot;lenexa-public-market&quot;],
+  &quot;trusted_contact&quot;: &quot;+19135550123&quot;,
+  &quot;language&quot;: &quot;en&quot;
+}
+</code></pre>
+<ul>
+<li><code>favorites</code> are tile ids scoped to the fork that wrote them. A different fork will not
+  recognize them and must ignore them silently — never error, never nag, never delete.</li>
+<li><code>trusted_contact</code> and <code>language</code> are universal and carry over.</li>
+<li>Importers must sanitize: drop unknown keys, never execute anything, never phone home.</li>
+<li>There is no version negotiation and no migration service. If <code>format</code> is unfamiliar, ignore
+  the file and say so plainly. Rule 7.</li>
+</ul>
+<hr />
+<h2 id="6">6. Emergency numbers are local — change them</h2>
+<p><code>assets/panic.js</code> hard-codes the numbers for Johnson County, Kansas. A fork <strong>must</strong> replace
+them before publishing, and should verify each one against a primary source:</p>
+<table>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Lenexa value</th>
+<th>Where to verify for your city</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Emergency</td>
+<td><code>911</code></td>
+<td>Same across the US.</td>
+</tr>
+<tr>
+<td>Police non-emergency</td>
+<td><code>913-477-7301</code></td>
+<td>Your city's police department contact page.</td>
+</tr>
+<tr>
+<td>DV shelter, 24h</td>
+<td><code>913-262-2868</code> (Safehome)</td>
+<td>Your county's shelter, not a national number.</td>
+</tr>
+<tr>
+<td>Statewide crisis</td>
+<td><code>1-888-363-2287</code> (SafeLine Kansas)</td>
+<td>Your state coalition.</td>
+</tr>
+<tr>
+<td>Lifeline</td>
+<td><code>988</code></td>
+<td>Same across the US.</td>
+</tr>
+<tr>
+<td>Community resources</td>
+<td><code>211</code></td>
+<td>Same across the US.</td>
+</tr>
+</tbody>
+</table>
+<p>Also regenerate the offline cross-street table for your geofence:</p>
+<pre><code>python3 sweep/gen_streets.py     # edit BBOX first; writes the literal baked into panic.js
+</code></pre>
+<p>That table is what lets the help screen name a cross-street with no network and no third
+party. It ships inside the JavaScript on purpose, so the button still works from cache when
+the site is unreachable.</p>
+<hr />
+<h2 id="7">7. Checklist for standing up a fork</h2>
+<ol>
+<li>Fork, rename to <code>&lt;city&gt;-&lt;neighborhood&gt;-commons</code>.</li>
+<li>Draw the geofence polygon in <code>data/tiles.json</code>. Keep it walkable — a Commons that spans a
+   whole metro is a directory, not a neighborhood.</li>
+<li>Seed 20–30 anchor tiles. Empty is fine. Hopeful is the floor.</li>
+<li>Delete <code>notes/*.md</code> and regenerate empty note files for your tiles.</li>
+<li>Replace every number in <code>assets/panic.js</code>. Verify each against a primary source.</li>
+<li>Regenerate the street table with your bounding box.</li>
+<li>Rewrite <code>preparedness.html</code> with your county's hotlines.</li>
+<li>Leave <code>docs/canon.md</code> alone.</li>
+<li>Turn on GitHub Pages, main branch, root. There is nothing else to deploy.</li>
+<li>Tell nobody's algorithm. Tell your neighbors.</li>
+</ol>
+</main>
+<footer class="site">
+  <div class="inner">
+    <p><strong>Publish-only.</strong> This surface observes and publishes. It notifies no authority.
+      In an emergency, call 911. The red <strong>Reach help now</strong> button opens your own
+      phone's dialer — it never calls anyone for you, and it never tells anyone you tapped it.</p>
+    <ul>
+      <li><a href="https://www.lenexapublicmarket.com/" target="_blank" rel="noopener">Lenexa Public Market</a></li>
+      <li><a href="https://www.lenexa.com/Events-Activities" target="_blank" rel="noopener">City of Lenexa events</a></li>
+      <li><a href="https://www.copaken-brooks.com/our-properties/city-center-lenexa/" target="_blank" rel="noopener">Copaken Brooks — City Center Lenexa</a></li>
+      <li><a href="https://github.com/EVEglyphDesign/ark-peer-review-ledger" target="_blank" rel="noopener">Sibling project: ARK Peer Review Ledger</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="assets/twin.js"></script>
+<script src="assets/panic.js"></script>
+</body>
+</html>

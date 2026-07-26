@@ -30,7 +30,9 @@
   <nav class="topnav" aria-label="Primary">
     <a href="canon.html">Canon</a>
     <a href="three-doors.html">Three doors</a>
+    <a href="preparedness.html">Preparedness</a>
     <a href="https://github.com/EVEglyphDesign/lenexa-city-center-commons" target="_blank" rel="noopener">Repo</a>
+    <button type="button" class="twin-btn" id="twin-btn">This device</button>
     <a class="primary" href="https://github.com/EVEglyphDesign/lenexa-city-center-commons/issues/new?template=neighbor-note.yml" target="_blank" rel="noopener">Add a note</a>
   </nav>
 </header>
@@ -39,6 +41,16 @@
   <div id="map" role="application" aria-label="Map of Lenexa City Center tiles"></div>
   <div class="paper-grain" aria-hidden="true"></div>
   <div class="vignette" aria-hidden="true"></div>
+
+  <div class="deck">
+    <div id="deck-ask"></div>
+    <div class="answer" id="deck-answer" hidden aria-live="polite"></div>
+    <div class="lenses" id="deck-lenses" role="group" aria-label="Lenses"></div>
+    <div id="deck-listen"></div>
+    <div id="deck-dot"></div>
+  </div>
+
+  <div class="twin-panel" id="twin-panel" hidden aria-label="What this device remembers"></div>
 
   <section class="intro" aria-label="About this map">
     <h1>A place for neighbors to compare notes</h1>
@@ -58,6 +70,9 @@
         notes renders <em>hopeful</em> — light, unfinished, waiting. Absence of data is not a signal.</p>
       <p class="tiny">No accounts. No analytics. Nothing here is reported to the city, the county,
         or anyone else — <a href="canon.html">see the canon</a>.</p>
+      <p class="tiny">Share your location and the map shows what is within a short walk, and how long
+        each one takes. That reading happens in your browser — never stored, never sent. Say no and
+        everything still works.</p>
     </div>
     <button type="button" class="intro-toggle" id="intro-toggle">hide</button>
   </section>
@@ -77,7 +92,9 @@
     <p><strong>Publish-only.</strong> This surface observes and publishes. It does not notify
       Lenexa PD, code enforcement, KDHE, OSHA, or any other authority — ever. If you want an
       authority involved, the <a href="three-doors.html">third door</a> lists the real intake
-      channels and you file it yourself. In an emergency, call 911; this map is not an emergency channel.</p>
+      channels and you file it yourself. In an emergency, call 911. The red <strong>Reach help now</strong>
+      button opens your own phone's dialer — it never calls anyone for you, and it never tells anyone
+      you tapped it.</p>
     <p>No landlord field. No management field. No ranking of one place against another. No accounts,
       no cookies, no analytics. Public repo, MIT licensed, built to be forked.</p>
     <ul>
@@ -94,6 +111,10 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="assets/twin.js"></script>
+<script src="assets/panic.js"></script>
+<script src="assets/voice.js"></script>
+<script src="assets/assistant.js"></script>
 <script src="assets/map.js"></script>
 </body>
 </html>

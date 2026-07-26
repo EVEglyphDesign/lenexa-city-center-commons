@@ -1,0 +1,62 @@
+name: sweep
+
+# Propose-only ingestion. Canon rule 5.
+#
+# This workflow writes to archive/reports/YYYY-MM-DD/ and nowhere else. It cannot
+# publish to the map: promotion is a human pull request against data/tiles.json or
+# notes/, and sweep/promote.py has no apply mode.
+#
+# Keys are optional. Without them the Google and Yelp collectors log "skipped: no key"
+# and the sweep still runs OSM and the city RSS feed. Nothing here fails for a missing
+# secret, and no key is ever committed to the repo.
+
+on:
+  schedule:
+    - cron: '17 * * * *'      # hourly, off the hour to be a polite Overpass citizen
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sweep
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run the sweep
+        env:
+          GOOGLE_PLACES_KEY: ${{ secrets.GOOGLE_PLACES_KEY }}
+          YELP_KEY: ${{ secrets.YELP_KEY }}
+        run: python3 sweep/sweep.py
+
+      - name: Show what promotion would do (never applies it)
+        run: python3 sweep/promote.py | head -200
+
+      - name: Commit the day's proposals, if any changed
+        run: |
+          git config user.name  "commons-sweep"
+          git config user.email "commons-sweep@users.noreply.github.com"
+          git add archive/reports
+          if git diff --cached --quiet; then
+            echo "no change — nothing to commit"
+            exit 0
+          fi
+          git commit -m "sweep: proposals for $(date -u +%F) (propose-only, nothing published)"
+          git push
+
+      - name: Guard — the sweep must never touch the map or the notes
+        run: |
+          if ! git diff --quiet HEAD~1 HEAD -- data/tiles.json notes/ 2>/dev/null; then
+            echo "::error::canon rule 5 violation: a sweep run modified data/tiles.json or notes/"
+            exit 1
+          fi
+          echo "clean: only archive/reports was touched"

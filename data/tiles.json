@@ -1,554 +1,606 @@
 {
-  "type": "FeatureCollection",
-  "name": "lenexa-city-center-commons tiles",
-  "version": 1,
-  "generated": "2026-07-25",
-  "geofence": {
-    "label": "Lenexa City Center \u2014 the approx. 200-acre core around 87th St Pkwy & Renner Blvd plus the adjacent City Center blocks that hold the anchor tiles. Working boundary, drawn by hand; corrections welcome by pull request.",
-    "centroid": [
-      38.97,
-      -94.78
-    ],
-    "polygon": [
-      [
-        38.9782,
-        -94.7862
-      ],
-      [
-        38.9782,
-        -94.7748
-      ],
-      [
-        38.9645,
-        -94.7748
-      ],
-      [
-        38.9645,
-        -94.7862
-      ]
-    ]
-  },
-  "notice": "Tiles are keyed by address or place id only. There is no owner, landlord, or management field in this data model, by canon.",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.777,
-          38.9705
-        ]
-      },
-      "properties": {
-        "id": "the-domain-apartments",
-        "name": "The Domain Apartments",
-        "kind": "residential",
-        "address": "Renner Blvd at W 87th St Pkwy area, Lenexa, KS 66219",
-        "place_id": null,
-        "blurb": "Part of the original Copaken Brooks City Center plan.",
-        "notes_file": "notes/the-domain-apartments.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.7755,
-          38.9718
-        ]
-      },
-      "properties": {
-        "id": "the-peaks-at-sonoma",
-        "name": "The Peaks at Sonoma",
-        "kind": "residential",
-        "address": "Sonoma Dr area, Lenexa, KS 66219",
-        "place_id": null,
-        "blurb": "Residential community in the Domain area.",
-        "notes_file": "notes/the-peaks-at-sonoma.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.7783,
-          38.9762
-        ]
-      },
-      "properties": {
-        "id": "watercrest-at-city-center",
-        "name": "WaterCrest at City Center",
-        "kind": "residential",
-        "address": "8401 Renner Blvd, Lenexa, KS 66219",
-        "place_id": null,
-        "blurb": "Apartments on the north edge of City Center.",
-        "notes_file": "notes/watercrest-at-city-center.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.7782,
-          38.9767
-        ]
-      },
-      "properties": {
-        "id": "edgewater-at-city-center",
-        "name": "EdgeWater at City Center",
-        "kind": "residential",
-        "address": "8395 Renner Blvd, Lenexa, KS 66219",
-        "place_id": null,
-        "blurb": "Apartments on the north edge of City Center.",
-        "notes_file": "notes/edgewater-at-city-center.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.7795,
-          38.9653
-        ]
-      },
-      "properties": {
-        "id": "estancia-at-city-center",
-        "name": "Estancia at City Center",
-        "kind": "residential",
-        "address": "9001 Renner Blvd, Lenexa, KS 66219",
-        "place_id": null,
-        "blurb": "Apartments on the south end of Renner Blvd.",
-        "notes_file": "notes/estancia-at-city-center.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.7789,
-          38.9695
-        ]
-      },
-      "properties": {
-        "id": "the-lofts-at-city-center",
-        "name": "The LoFTS at City Center",
-        "kind": "residential",
-        "address": "8787 Renner Blvd, Lenexa, KS 66219",
-        "place_id": null,
-        "blurb": "Loft-style residences near the civic campus.",
-        "notes_file": "notes/the-lofts-at-city-center.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.7768,
-          38.9668
-        ]
-      },
-      "properties": {
-        "id": "ross-canyon",
-        "name": "Ross Canyon",
-        "kind": "residential",
-        "address": "Planned \u2014 City Center south, Lenexa, KS 66219",
-        "place_id": null,
-        "blurb": "Planned, 469 units. Not yet built.",
-        "notes_file": "notes/ross-canyon.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.7818,
-          38.9689
-        ]
-      },
-      "properties": {
-        "id": "the-rise",
-        "name": "The Rise",
-        "kind": "residential",
-        "address": "Planned \u2014 City Center core, Lenexa, KS 66219",
-        "place_id": null,
-        "blurb": "Planned nine-story building, 121 units. Not yet built.",
-        "notes_file": "notes/the-rise.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.7838,
-          38.9699
-        ]
-      },
-      "properties": {
-        "id": "lenexa-public-market",
-        "name": "Lenexa Public Market",
-        "kind": "civic",
-        "address": "8750 Penrose Ln, Lenexa, KS 66219",
-        "place_id": null,
-        "blurb": "Year-round indoor market hall with local food vendors.",
-        "notes_file": "notes/lenexa-public-market.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.7844,
-          38.9698
-        ]
-      },
-      "properties": {
-        "id": "lenexa-city-hall",
-        "name": "Lenexa City Hall / Civic Campus",
-        "kind": "civic",
-        "address": "17101 W 87th St Pkwy, Lenexa, KS 66219",
-        "place_id": null,
-        "blurb": "City Hall, recreation center and civic campus.",
-        "notes_file": "notes/lenexa-city-hall.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.784,
-          38.9695
-        ]
-      },
-      "properties": {
-        "id": "lenexa-city-center-library",
-        "name": "Lenexa City Center Library",
-        "kind": "civic",
-        "address": "8778 Penrose Ln, Lenexa, KS 66219",
-        "place_id": null,
-        "blurb": "Johnson County Library branch at City Center.",
-        "notes_file": "notes/lenexa-city-center-library.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.7842,
-          38.9705
-        ]
-      },
-      "properties": {
-        "id": "lenexa-farmers-market",
-        "name": "Lenexa Farmers Market",
-        "kind": "civic",
-        "address": "Civic Campus lot, W 87th St Pkwy, Lenexa, KS 66219",
-        "place_id": null,
-        "blurb": "Seasonal outdoor market at the civic campus.",
-        "notes_file": "notes/lenexa-farmers-market.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.7561,
-          38.9692
-        ]
-      },
-      "properties": {
-        "id": "sar-ko-par-skate-park",
-        "name": "Sar-Ko-Par Skate Park",
-        "kind": "civic",
-        "address": "87th St Pkwy near Lackman Rd, Lenexa, KS 66219",
-        "place_id": null,
-        "blurb": "Public skate park at Sar-Ko-Par Trails Park, east along 87th St Pkwy \u2014 outside the core boundary, included as an anchor tile.",
-        "notes_file": "notes/sar-ko-par-skate-park.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.7786,
-          38.974
-        ]
-      },
-      "properties": {
-        "id": "life-time-lenexa",
-        "name": "Life Time Lenexa City Center",
-        "kind": "civic",
-        "address": "Renner Blvd at W 85th St, Lenexa, KS 66219",
-        "place_id": null,
-        "blurb": "Fitness and athletic club.",
-        "notes_file": "notes/life-time-lenexa.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.7803,
-          38.9664
-        ]
-      },
-      "properties": {
-        "id": "kiewit-headquarters-campus",
-        "name": "Kiewit Headquarters Campus",
-        "kind": "civic",
-        "address": "9401 Renner Blvd, Lenexa, KS 66219",
-        "place_id": null,
-        "blurb": "Regional headquarters campus, south end of City Center.",
-        "notes_file": "notes/kiewit-headquarters-campus.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.7845,
-          38.9672
-        ]
-      },
-      "properties": {
-        "id": "park-university-lenexa",
-        "name": "Park University \u2014 Lenexa campus",
-        "kind": "civic",
-        "address": "City Center, Lenexa, KS 66219",
-        "place_id": null,
-        "blurb": "University campus inside City Center.",
-        "notes_file": "notes/park-university-lenexa.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.78392,
-          38.97002
-        ]
-      },
-      "properties": {
-        "id": "african-dream-cuisine",
-        "name": "African Dream Cuisine",
-        "kind": "business",
-        "address": "Inside Lenexa Public Market, 8750 Penrose Ln",
-        "place_id": null,
-        "blurb": "Public Market merchant.",
-        "notes_file": "notes/african-dream-cuisine.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.784,
-          38.96978
-        ]
-      },
-      "properties": {
-        "id": "cardboard-corner-cafe",
-        "name": "Cardboard Corner Cafe",
-        "kind": "business",
-        "address": "Inside Lenexa Public Market, 8750 Penrose Ln",
-        "place_id": null,
-        "blurb": "Public Market merchant \u2014 board game cafe.",
-        "notes_file": "notes/cardboard-corner-cafe.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.78372,
-          38.96968
-        ]
-      },
-      "properties": {
-        "id": "homestead-kitchen-bakery",
-        "name": "Homestead Kitchen + Bakery",
-        "kind": "business",
-        "address": "Inside Lenexa Public Market, 8750 Penrose Ln",
-        "place_id": null,
-        "blurb": "Public Market merchant.",
-        "notes_file": "notes/homestead-kitchen-bakery.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.78355,
-          38.97005
-        ]
-      },
-      "properties": {
-        "id": "kc-doner",
-        "name": "KC D\u00f6ner",
-        "kind": "business",
-        "address": "Inside Lenexa Public Market, 8750 Penrose Ln",
-        "place_id": null,
-        "blurb": "Public Market merchant.",
-        "notes_file": "notes/kc-doner.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.78345,
-          38.9698
-        ]
-      },
-      "properties": {
-        "id": "mr-ds-coffee",
-        "name": "Mr. D's Coffee",
-        "kind": "business",
-        "address": "Inside Lenexa Public Market, 8750 Penrose Ln",
-        "place_id": null,
-        "blurb": "Public Market merchant.",
-        "notes_file": "notes/mr-ds-coffee.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.7833,
-          38.96995
-        ]
-      },
-      "properties": {
-        "id": "saap-saap-noodles",
-        "name": "Saap Saap Noodles",
-        "kind": "business",
-        "address": "Inside Lenexa Public Market, 8750 Penrose Ln",
-        "place_id": null,
-        "blurb": "Public Market merchant.",
-        "notes_file": "notes/saap-saap-noodles.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.78345,
-          38.96965
-        ]
-      },
-      "properties": {
-        "id": "sohailas-kitchen",
-        "name": "Sohaila's Kitchen",
-        "kind": "business",
-        "address": "Inside Lenexa Public Market, 8750 Penrose Ln",
-        "place_id": null,
-        "blurb": "Public Market merchant.",
-        "notes_file": "notes/sohailas-kitchen.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.78372,
-          38.97012
-        ]
-      },
-      "properties": {
-        "id": "toppd-pizza-salads",
-        "name": "Topp'd Pizza + Salads",
-        "kind": "business",
-        "address": "Inside Lenexa Public Market, 8750 Penrose Ln",
-        "place_id": null,
-        "blurb": "Public Market merchant.",
-        "notes_file": "notes/toppd-pizza-salads.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.78392,
-          38.96958
-        ]
-      },
-      "properties": {
-        "id": "chilakillers",
-        "name": "Chilakillers",
-        "kind": "business",
-        "address": "Inside Lenexa Public Market, 8750 Penrose Ln",
-        "place_id": null,
-        "blurb": "Public Market merchant.",
-        "notes_file": "notes/chilakillers.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.7778,
-          38.9695
-        ]
-      },
-      "properties": {
-        "id": "jack-stack-barbecue",
-        "name": "Jack Stack Barbecue",
-        "kind": "business",
-        "address": "Renner Blvd near W 87th St Pkwy, Lenexa, KS 66219",
-        "place_id": null,
-        "blurb": "Barbecue restaurant inside the geofence.",
-        "notes_file": "notes/jack-stack-barbecue.md",
-        "coordinates_precision": "approximate \u2014 corrections welcome by pull request"
-      }
-    }
+ "type": "FeatureCollection",
+ "name": "lenexa-city-center-commons tiles",
+ "version": 2,
+ "generated": "2026-07-25",
+ "geofence": {
+  "label": "Lenexa City Center — the approx. 200-acre core around 87th St Pkwy & Renner Blvd plus the adjacent City Center blocks that hold the anchor tiles. Working boundary, drawn by hand; corrections welcome by pull request.",
+  "centroid": [
+   38.97,
+   -94.78
+  ],
+  "polygon": [
+   [
+    38.9782,
+    -94.7862
+   ],
+   [
+    38.9782,
+    -94.7748
+   ],
+   [
+    38.9645,
+    -94.7748
+   ],
+   [
+    38.9645,
+    -94.7862
+   ]
   ]
+ },
+ "notice": "Tiles are keyed by address or place id only. There is no owner, landlord, or management field in this data model, by canon. `tags` drives the lens filters and is empty until notes carry them. `external` holds third-party fields a human accepted from a sweep proposal; every rendered value is attributed and carries a deep link back to its source.",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.777,
+     38.9705
+    ]
+   },
+   "properties": {
+    "id": "the-domain-apartments",
+    "name": "The Domain Apartments",
+    "kind": "residential",
+    "address": "Renner Blvd at W 87th St Pkwy area, Lenexa, KS 66219",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Part of the original Copaken Brooks City Center plan.",
+    "notes_file": "notes/the-domain-apartments.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.7755,
+     38.9718
+    ]
+   },
+   "properties": {
+    "id": "the-peaks-at-sonoma",
+    "name": "The Peaks at Sonoma",
+    "kind": "residential",
+    "address": "Sonoma Dr area, Lenexa, KS 66219",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Residential community in the Domain area.",
+    "notes_file": "notes/the-peaks-at-sonoma.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.7783,
+     38.9762
+    ]
+   },
+   "properties": {
+    "id": "watercrest-at-city-center",
+    "name": "WaterCrest at City Center",
+    "kind": "residential",
+    "address": "8401 Renner Blvd, Lenexa, KS 66219",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Apartments on the north edge of City Center.",
+    "notes_file": "notes/watercrest-at-city-center.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.7782,
+     38.9767
+    ]
+   },
+   "properties": {
+    "id": "edgewater-at-city-center",
+    "name": "EdgeWater at City Center",
+    "kind": "residential",
+    "address": "8395 Renner Blvd, Lenexa, KS 66219",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Apartments on the north edge of City Center.",
+    "notes_file": "notes/edgewater-at-city-center.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.7795,
+     38.9653
+    ]
+   },
+   "properties": {
+    "id": "estancia-at-city-center",
+    "name": "Estancia at City Center",
+    "kind": "residential",
+    "address": "9001 Renner Blvd, Lenexa, KS 66219",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Apartments on the south end of Renner Blvd.",
+    "notes_file": "notes/estancia-at-city-center.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.7789,
+     38.9695
+    ]
+   },
+   "properties": {
+    "id": "the-lofts-at-city-center",
+    "name": "The LoFTS at City Center",
+    "kind": "residential",
+    "address": "8787 Renner Blvd, Lenexa, KS 66219",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Loft-style residences near the civic campus.",
+    "notes_file": "notes/the-lofts-at-city-center.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.7768,
+     38.9668
+    ]
+   },
+   "properties": {
+    "id": "ross-canyon",
+    "name": "Ross Canyon",
+    "kind": "residential",
+    "address": "Planned — City Center south, Lenexa, KS 66219",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Planned, 469 units. Not yet built.",
+    "notes_file": "notes/ross-canyon.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.7818,
+     38.9689
+    ]
+   },
+   "properties": {
+    "id": "the-rise",
+    "name": "The Rise",
+    "kind": "residential",
+    "address": "Planned — City Center core, Lenexa, KS 66219",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Planned nine-story building, 121 units. Not yet built.",
+    "notes_file": "notes/the-rise.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.7838,
+     38.9699
+    ]
+   },
+   "properties": {
+    "id": "lenexa-public-market",
+    "name": "Lenexa Public Market",
+    "kind": "civic",
+    "address": "8750 Penrose Ln, Lenexa, KS 66219",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Year-round indoor market hall with local food vendors.",
+    "notes_file": "notes/lenexa-public-market.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.7844,
+     38.9698
+    ]
+   },
+   "properties": {
+    "id": "lenexa-city-hall",
+    "name": "Lenexa City Hall / Civic Campus",
+    "kind": "civic",
+    "address": "17101 W 87th St Pkwy, Lenexa, KS 66219",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "City Hall, recreation center and civic campus.",
+    "notes_file": "notes/lenexa-city-hall.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.784,
+     38.9695
+    ]
+   },
+   "properties": {
+    "id": "lenexa-city-center-library",
+    "name": "Lenexa City Center Library",
+    "kind": "civic",
+    "address": "8778 Penrose Ln, Lenexa, KS 66219",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Johnson County Library branch at City Center.",
+    "notes_file": "notes/lenexa-city-center-library.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.7842,
+     38.9705
+    ]
+   },
+   "properties": {
+    "id": "lenexa-farmers-market",
+    "name": "Lenexa Farmers Market",
+    "kind": "civic",
+    "address": "Civic Campus lot, W 87th St Pkwy, Lenexa, KS 66219",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Seasonal outdoor market at the civic campus.",
+    "notes_file": "notes/lenexa-farmers-market.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.7561,
+     38.9692
+    ]
+   },
+   "properties": {
+    "id": "sar-ko-par-skate-park",
+    "name": "Sar-Ko-Par Skate Park",
+    "kind": "civic",
+    "address": "87th St Pkwy near Lackman Rd, Lenexa, KS 66219",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Public skate park at Sar-Ko-Par Trails Park, east along 87th St Pkwy — outside the core boundary, included as an anchor tile.",
+    "notes_file": "notes/sar-ko-par-skate-park.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.7786,
+     38.974
+    ]
+   },
+   "properties": {
+    "id": "life-time-lenexa",
+    "name": "Life Time Lenexa City Center",
+    "kind": "civic",
+    "address": "Renner Blvd at W 85th St, Lenexa, KS 66219",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Fitness and athletic club.",
+    "notes_file": "notes/life-time-lenexa.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.7803,
+     38.9664
+    ]
+   },
+   "properties": {
+    "id": "kiewit-headquarters-campus",
+    "name": "Kiewit Headquarters Campus",
+    "kind": "civic",
+    "address": "9401 Renner Blvd, Lenexa, KS 66219",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Regional headquarters campus, south end of City Center.",
+    "notes_file": "notes/kiewit-headquarters-campus.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.7845,
+     38.9672
+    ]
+   },
+   "properties": {
+    "id": "park-university-lenexa",
+    "name": "Park University — Lenexa campus",
+    "kind": "civic",
+    "address": "City Center, Lenexa, KS 66219",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "University campus inside City Center.",
+    "notes_file": "notes/park-university-lenexa.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.78392,
+     38.97002
+    ]
+   },
+   "properties": {
+    "id": "african-dream-cuisine",
+    "name": "African Dream Cuisine",
+    "kind": "business",
+    "address": "Inside Lenexa Public Market, 8750 Penrose Ln",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Public Market merchant.",
+    "notes_file": "notes/african-dream-cuisine.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.784,
+     38.96978
+    ]
+   },
+   "properties": {
+    "id": "cardboard-corner-cafe",
+    "name": "Cardboard Corner Cafe",
+    "kind": "business",
+    "address": "Inside Lenexa Public Market, 8750 Penrose Ln",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Public Market merchant — board game cafe.",
+    "notes_file": "notes/cardboard-corner-cafe.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.78372,
+     38.96968
+    ]
+   },
+   "properties": {
+    "id": "homestead-kitchen-bakery",
+    "name": "Homestead Kitchen + Bakery",
+    "kind": "business",
+    "address": "Inside Lenexa Public Market, 8750 Penrose Ln",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Public Market merchant.",
+    "notes_file": "notes/homestead-kitchen-bakery.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.78355,
+     38.97005
+    ]
+   },
+   "properties": {
+    "id": "kc-doner",
+    "name": "KC Döner",
+    "kind": "business",
+    "address": "Inside Lenexa Public Market, 8750 Penrose Ln",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Public Market merchant.",
+    "notes_file": "notes/kc-doner.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.78345,
+     38.9698
+    ]
+   },
+   "properties": {
+    "id": "mr-ds-coffee",
+    "name": "Mr. D's Coffee",
+    "kind": "business",
+    "address": "Inside Lenexa Public Market, 8750 Penrose Ln",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Public Market merchant.",
+    "notes_file": "notes/mr-ds-coffee.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.7833,
+     38.96995
+    ]
+   },
+   "properties": {
+    "id": "saap-saap-noodles",
+    "name": "Saap Saap Noodles",
+    "kind": "business",
+    "address": "Inside Lenexa Public Market, 8750 Penrose Ln",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Public Market merchant.",
+    "notes_file": "notes/saap-saap-noodles.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.78345,
+     38.96965
+    ]
+   },
+   "properties": {
+    "id": "sohailas-kitchen",
+    "name": "Sohaila's Kitchen",
+    "kind": "business",
+    "address": "Inside Lenexa Public Market, 8750 Penrose Ln",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Public Market merchant.",
+    "notes_file": "notes/sohailas-kitchen.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.78372,
+     38.97012
+    ]
+   },
+   "properties": {
+    "id": "toppd-pizza-salads",
+    "name": "Topp'd Pizza + Salads",
+    "kind": "business",
+    "address": "Inside Lenexa Public Market, 8750 Penrose Ln",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Public Market merchant.",
+    "notes_file": "notes/toppd-pizza-salads.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.78392,
+     38.96958
+    ]
+   },
+   "properties": {
+    "id": "chilakillers",
+    "name": "Chilakillers",
+    "kind": "business",
+    "address": "Inside Lenexa Public Market, 8750 Penrose Ln",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Public Market merchant.",
+    "notes_file": "notes/chilakillers.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.7778,
+     38.9695
+    ]
+   },
+   "properties": {
+    "id": "jack-stack-barbecue",
+    "name": "Jack Stack Barbecue",
+    "kind": "business",
+    "address": "Renner Blvd near W 87th St Pkwy, Lenexa, KS 66219",
+    "tags": [],
+    "external": {},
+    "place_id": null,
+    "blurb": "Barbecue restaurant inside the geofence.",
+    "notes_file": "notes/jack-stack-barbecue.md",
+    "coordinates_precision": "approximate — corrections welcome by pull request"
+   }
+  }
+ ]
 }
